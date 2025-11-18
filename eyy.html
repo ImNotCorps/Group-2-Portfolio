@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Group 2 — Portfolio</title>
+
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo front.png" type="image/png" />
+  <link rel="stylesheet" href="ey.css" />
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header class="nav-outer">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <div class="brand">
+        <img src="img/logo front.png" alt="Group 2 logo" class="brand__logo" />
+        <span class="brand__name">Group 2</span>
+      </div>
+
+      <button id="menuToggle" class="hamburger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#team-page" class="nav-link">Team Page</a></li>
+        <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <ul>
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#team-page" class="mobile-link">Team Page</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero__content container">
+        <div class="hero__text">
+          <img src="img/logo front.png" alt="Group 2 logo" class="brand__logo" />
+          
+          <div class="hero__actions">
+            <a href="#about" class="btn btn-primary">Learn more</a>
+            <a href="#contact" class="btn btn-ghost">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="visual-frame">
+          <img src="img/para sa ict.png" alt="Illustration" />
+        </div>
+      </div>
+      <div class="decor decor--top"></div>
+      <div class="decor decor--bottom"></div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about" class="section section--muted">
+      <div class="container">
+        <h2 class="section__title">About Us</h2>
+        <p class="section__subtitle">We are a group of second-year Bachelor of Technical-Vocational Teacher Education (BTVTED) students dedicated to building strong foundations in both theory and hands-on skills. As future educators in the technical-vocational field, we value collaboration, continuous learning, and the development of practical competencies that will prepare us for real-world teaching environments. 
+          Our group works together to support each other academically and professionally as we strive toward excellence.</p>
+
+        <div class="mv-card">
+          <!-- Tab Buttons -->
+          <div class="mv-tab-buttons">
+            <button class="mv-btn active" data-target="background">Background</button>
+            <button class="mv-btn" data-target="mission">Mission</button>
+            <button class="mv-btn" data-target="vision">Vision</button>
+          </div>
+
+          <!-- Tab Contents -->
+          <div id="background" class="mv-content active">
+            <h3>Our Background</h3>
+            <p>
+              Our group is composed of BTVTED students currently in our second year of college. United by our goal of becoming effective and skilled technical-vocational educators, we actively participate in academic tasks, practical training, and collaborative projects.
+              Through our shared efforts, we aim to strengthen our abilities, broaden our knowledge, and uphold the values needed in the teaching profession.
+            </p>
+          </div>
+
+          <div id="mission" class="mv-content">
+            <h3>Our Mission</h3>
+            <p>To enhance our competence as future technical-vocational educators by engaging in meaningful learning opportunities, fostering teamwork, and demonstrating professionalism, integrity, and dedication to teaching and community involvement.</p>
+          </div>
+
+          <div id="vision" class="mv-content">
+            <h3>Our Vision</h3>
+            <p>To be recognized as a group of highly skilled, values-driven, and service-oriented future educators who will contribute to the growth of technical-vocational education and inspire positive change in the communities we serve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM PAGE -->
+    <section id="team-page" class="section section--muted">
+      <div class="container">
+        <h2 class="section__title">Team Page</h2>
+        <p class="section__subtitle">Meet our group members</p>
+        <div class="photo-series" aria-label="Team photos">
+          <figure class="photo-frame">
+            <img src="img/mark.png.jpg" alt="Mark Deciembre" />
+            <figcaption>Mark Deciembre</figcaption>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/1F57mwbh1g/" class="social-link fb" target="_blank" rel="noopener noreferrer" aria-label="Mark Deciembre Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.4v-3h2.4V9.1c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .08 2 .08v2.2h-1.1c-1.1 0-1.4.66-1.4 1.3V12h2.4l-.38 3h-2.02v7A10 10 0 0 0 22 12z"/></svg>
+                <span class="social-text">Mark Deciembre</span>
+              </a>
+            </div>
+          </figure>
+          <figure class="photo-frame">
+            <img src="img/allan.jpg" alt="Allan James Corpuz" />
+            <figcaption>Allan James Corpuz</figcaption>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/1HTKULPeF3/" class="social-link fb" target="_blank" rel="noopener noreferrer" aria-label="Allan James Corpuz Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.4v-3h2.4V9.1c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .08 2 .08v2.2h-1.1c-1.1 0-1.4.66-1.4 1.3V12h2.4l-.38 3h-2.02v7A10 10 0 0 0 22 12z"/></svg>
+                <span class="social-text">Allan James Corpuz</span>
+              </a>
+            </div>
+          </figure>
+          <figure class="photo-frame">
+            <img src="img/adam.png.jpg" alt="Adam Antolin" />
+            <figcaption>Adam Antolin</figcaption>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/1DDnZyEEzP/" class="social-link fb" target="_blank" rel="noopener noreferrer" aria-label="Adam Antolin Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.4v-3h2.4V9.1c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .08 2 .08v2.2h-1.1c-1.1 0-1.4.66-1.4 1.3V12h2.4l-.38 3h-2.02v7A10 10 0 0 0 22 12z"/></svg>
+                <span class="social-text">Adam Antolin</span>
+              </a>
+            </div>
+          </figure>
+          <figure class="photo-frame">
+            <img src="img/jopay.png.jpg" alt="Member 4" />
+            <figcaption>Josephine Reyes</figcaption>
+            <div class="socials">
+              <a href="https://www.facebook.com/share/1CPUHJX44v/" class="social-link fb" target="_blank" rel="noopener noreferrer" aria-label="Member 4 Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.4v-3h2.4V9.1c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .08 2 .08v2.2h-1.1c-1.1 0-1.4.66-1.4 1.3V12h2.4l-.38 3h-2.02v7A10 10 0 0 0 22 12z"/></svg>
+                <span class="social-text">Josephine Reyes</span>
+              </a>
+            </div>
+          </figure>
+          <figure class="photo-frame">
+            <img src="img/Ruvic.jpg" alt="Member 5" />
+            <figcaption>Ruvic Barcia</figcaption>
+            <div class="socials">
+              <a href="https://www.facebook.com/R.0o0.vic" class="social-link fb" target="_blank" rel="noopener noreferrer" aria-label="Member 5 Facebook">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2.4v-3h2.4V9.1c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .08 2 .08v2.2h-1.1c-1.1 0-1.4.66-1.4 1.3V12h2.4l-.38 3h-2.02v7A10 10 0 0 0 22 12z"/></svg>
+                <span class="social-text">Ruvic Barcia</span>
+              </a>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container narrow">
+        <h2 class="section__title">Contact Us</h2>
+        <p class="section__subtitle">Have a question or a project? Send a message and we'll reply.</p>
+
+        <form id="contactForm" class="form" action="#" method="POST" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input type="email" name="email" placeholder="Your email" required />
+          </div>
+          <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="e.js"></script>
+</body>
+</html>
